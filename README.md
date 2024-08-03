@@ -42,9 +42,9 @@ use ChalkAuthorization,
 Chalk does expect your model to include the following attributes:
 
 ```elixir
-field :superuser, :boolean, default: false, null: false
-field :groups, {:array, :string}, default: [], null: false
-field :permissions, {:map, :integer}, default: %{}, null: false
+field :superuser, :boolean, default: false
+field :groups, {:array, :string}, default: []
+field :permissions, {:map, :integer}, default: %{}
 ```
 
 Please remember to include migrations to add these to the database if there are
