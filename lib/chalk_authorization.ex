@@ -5,7 +5,7 @@ defmodule ChalkAuthorization do
 
   It is inspired in the UNIX file permissions.
 
-  [ChalkAuthorization] provides the next:
+  `ChalkAuthorization` provides the next:
   - `can?/3` to check if the user is allowed to perform an specific
   action on a specific element.
   - `is_a?/2` to check if the user belongs to a specific group.
@@ -17,7 +17,7 @@ defmodule ChalkAuthorization do
   `ChalkAuthorization` is developed with Ecto in mind, although it may
   be possible to adapt it to use other solutions.
 
-  See the [implementation guide](implementation-guide.html).
+  See the ["Setup" section on the README](readme.html#setup).
 
   ## `opts` parameters
 
@@ -27,6 +27,10 @@ defmodule ChalkAuthorization do
   - `group_permissions`: it is mandatory to specify a map to indicate the groups,
   their actions and what their members are allowed to do.
 
+  ## Usage
+
+  - TLDR: ["Usage" section on the README](readme.html#usage).
+  - Take a look at the [functions cheatsheet](functions.html).
   """
 
   @doc """
@@ -120,7 +124,7 @@ defmodule ChalkAuthorization do
       @doc """
       Get the changeset to update the permissions.
 
-      ## Parameters
+      ### Parameters
 
       - `item`: can be an atom or a string.
       - `attrs`: can be a map.
